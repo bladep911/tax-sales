@@ -1,0 +1,30 @@
+{
+	"products": [{
+			"amount": 1,
+			"product": {
+				"name": "book",
+				"taxClass": "BASIC",
+				"category": "BOOK",
+				"shelfPrice": 12.49
+			}
+		},
+		{
+			"amount": 1,
+			"product": {
+				"name": "Music CD",
+				"taxClass": "BASIC",
+				"category": "MUSIC",
+				"shelfPrice": 14.99
+			}
+		},
+		{
+			"amount": 1,
+			"product": {
+				"name": "Chocolate Bar",
+				"taxClass": "BASIC",
+				"category": "FOOD",
+				"shelfPrice": 0.85
+			}
+		}
+	]
+}

@@ -1,0 +1,23 @@
+{
+	"products": [{
+			"amount": 1,
+			"product": {
+				"name": "box of chocolates",
+				"description": "imported box of chocolates",
+				"taxClass": "IMPORT",
+				"category": "FOOD",
+				"shelfPrice": 10.00
+			}
+		},
+		{
+			"amount": 1,
+			"product": {
+				"name": "Bottle of perfume",
+				"description": "imported bottle of perfume",
+				"taxClass": "IMPORT",
+				"category": "BEAUTY",
+				"shelfPrice": 47.50
+			}
+		}
+	]
+}

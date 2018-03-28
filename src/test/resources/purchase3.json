@@ -1,0 +1,41 @@
+{
+	"products": [{
+			"amount": 1,
+			"product": {
+				"name": "Bottle of perfume",
+				"description": "imported bottle of perfume",
+				"taxClass": "IMPORT",
+				"category": "BEAUTY",
+				"shelfPrice": 27.99
+			}
+		},
+		{
+			"amount": 1,
+			"product": {
+				"name": "Bottle of perfume",
+				"taxClass": "BASIC",
+				"category": "BEAUTY",
+				"shelfPrice": 18.99
+			}
+		},
+		{
+			"amount": 1,
+			"product": {
+				"name": "Packet of headache pills",
+				"taxClass": "BASIC",
+				"category": "MEDICAL",
+				"shelfPrice": 9.75
+			}
+		},
+		{
+			"amount": 1,
+			"product": {
+				"name": "Box of chocolates",
+				"description": "box of imported chocolates",
+				"taxClass": "IMPORT",
+				"category": "FOOD",
+				"shelfPrice": 11.25
+			}
+		}
+	]
+}
