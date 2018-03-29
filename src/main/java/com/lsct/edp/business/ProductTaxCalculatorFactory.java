@@ -5,15 +5,17 @@ import java.util.Map;
 
 import javax.naming.ConfigurationException;
 
+import com.lsct.edp.models.ProductTaxClass;
+
 public class ProductTaxCalculatorFactory {
 
-	private Map<TaxClass, IProductTaxCalculator> factoryCache;
+	private Map<ProductTaxClass, IProductTaxCalculator> factoryCache;
 
 	public ProductTaxCalculatorFactory() {
-		factoryCache = new HashMap<TaxClass, IProductTaxCalculator>();
+		factoryCache = new HashMap<ProductTaxClass, IProductTaxCalculator>();
 	}
 
-	public IProductTaxCalculator getTaxCalculator(TaxClass productTaxClass) throws ConfigurationException {
+	public IProductTaxCalculator getTaxCalculator(ProductTaxClass productTaxClass) throws ConfigurationException {
 		if (factoryCache.containsKey(productTaxClass))
 			return factoryCache.get(productTaxClass);
 

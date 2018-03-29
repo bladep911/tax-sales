@@ -5,7 +5,7 @@ package com.lsct.edp.business;
 
 import java.util.List;
 import com.lsct.edp.models.Product;
-import com.lsct.edp.models.ItemCategory;
+import com.lsct.edp.models.ProductCategory;
 import javax.naming.ConfigurationException;
 
 /**
@@ -18,7 +18,7 @@ public class BasicProductTaxCalculator extends AProductTaxCalculator {
 	private static String CONFIG_BASIC_EXEPT_LIST = "BASIC_EXEPT";
 	
 	private double baseTaxRate;
-	private List<ItemCategory> exeptCategories;
+	private List<ProductCategory> exeptCategories;
 	
 	public BasicProductTaxCalculator() throws ConfigurationException {
 		baseTaxRate  = PropertyHelper.getRequiredPropertyAsDouble(configProperty, CONFIG_BASIC_TAX_RATE);

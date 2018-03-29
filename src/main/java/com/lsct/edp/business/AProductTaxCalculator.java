@@ -6,12 +6,8 @@ package com.lsct.edp.business;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
-
 import javax.naming.ConfigurationException;
-
-import com.lsct.edp.models.ItemCategory;
-
-import lombok.experimental.Helper;
+import com.lsct.edp.models.ProductCategory;
 
 /**
  * @author andrea.boggia
@@ -31,12 +27,12 @@ public abstract class AProductTaxCalculator implements IProductTaxCalculator {
 		roundDecimalValue = PropertyHelper.getRequiredPropertyAsDouble(configProperty, PropertyHelper.CONFIG_PRICE_ROUND);
 	}
 	
-	protected List<ItemCategory> getExeptCategories(String exeptListProperty) {
-		List<ItemCategory> exeptedCategories = new ArrayList<ItemCategory>();
+	protected List<ProductCategory> getExeptCategories(String exeptListProperty) {
+		List<ProductCategory> exeptedCategories = new ArrayList<ProductCategory>();
 		String exeptList = configProperty.getProperty(exeptListProperty); 
 		if(exeptList != null && !exeptList.trim().isEmpty()) {
 			for(String cat: exeptList.split(PropertyHelper.CONFIG_LIST_SEPARATOR)) {
-				exeptedCategories.add(ItemCategory.valueOf(cat)); //TODO: add try catch
+				exeptedCategories.add(ProductCategory.valueOf(cat)); //TODO: add try catch
 			}
 			return exeptedCategories;
 		}	
