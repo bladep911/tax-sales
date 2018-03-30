@@ -123,10 +123,10 @@ public class Product {
 
 	/**
 	 * Sets the tax amount related to the shelf price
-	 * @param priceTax a double representing the tax amount
+	 * @param tax a double representing the tax amount
 	 */
-	public void setPriceTax(double priceTax) {
-		priceTax = priceTax;
+	public void setPriceTax(double tax) {
+		priceTax = tax;
 	}
 	
 	/**
