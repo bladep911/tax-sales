@@ -59,7 +59,7 @@ public class Product {
 
 	/**
 	 * Sets the product description
-	 * @param description the description to set
+	 * @param descr the description to set
 	 */
 	public void setDescription(String descr) {
 		description = descr;
@@ -125,8 +125,8 @@ public class Product {
 	 * Sets the tax amount related to the shelf price
 	 * @param priceTax a double representing the tax amount
 	 */
-	public void setPriceTax(double tax) {
-		priceTax = tax;
+	public void setPriceTax(double priceTax) {
+		priceTax = priceTax;
 	}
 	
 	/**

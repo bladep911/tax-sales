@@ -46,7 +46,8 @@ public class Purchase {
 	 * Gets the total price of the purchase.
 	 * It's calculated adding each ProductItem total price.
 	 * The total price includes taxes.
-	 * @return
+	 * @return 	 * @return a double representing the purchase total costs 
+
 	 */
 	public double getTotalCost() {
 		return products.stream().mapToDouble(f -> f.getTotalPrice()).sum();
